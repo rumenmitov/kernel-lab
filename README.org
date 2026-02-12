@@ -1,0 +1,31 @@
+#+title: Dragonfire
+#+author: Rumen Mitov
+
+A Linux kernel module.
+
+** Requirements
+- gcc
+- Linux header files
+- pre-commit
+- clang-format
+- sudo
+
+
+** Building and Installation
+You can build the module with:
+#+begin_src shell
+  make
+#+end_src
+
+To install the module:
+#+begin_src shell
+  make install
+#+end_src
+
+To uninstall:
+#+begin_src shell
+  make uninstall
+#+end_src
+
+For more make targets, see: [[./Makefile][Makefile]].
+

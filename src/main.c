@@ -16,3 +16,5 @@ module_init(dragonfire_init);
 module_exit(dragonfire_exit);
 
 MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Rumen Mitov");
+MODULE_DESCRIPTION("dragonfire - A Linux kernel module.");

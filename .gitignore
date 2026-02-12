@@ -1,2 +1,9 @@
 .cache/
 build/
+
+*~
+**/*~
+*#
+**/*#
+
+.dir-locals.el

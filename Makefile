@@ -10,6 +10,9 @@ FORMAT     := /usr/bin/env clang-format
 CHECKPATCH := $(KDIR)/scripts/checkpatch.pl
 
 
+.PHONY: all mkbuild build dev lint clean
+
+
 all: build dev
 
 
@@ -32,14 +35,6 @@ dev: mkbuild
 lint:
 	@$(FORMAT) -i $(wildcard $(SRC)/*.c) $(wildcard $(SRC)/*.h)
 	@$(CHECKPATCH) --no-tree -f $(wildcard $(SRC)/*.c) $(wildcard $(SRC)/*.h)
-
-
-install: build
-	@$(SUDO) insmod build/hello.ko
-
-
-uninstall:
-	@$(SUDO) rmmod hello
 
 
 clean:

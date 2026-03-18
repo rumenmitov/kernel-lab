@@ -1,4 +1,4 @@
-#+title: Dragonfire
+#+title: Linux Kernel Module
 #+author: Rumen Mitov
 
 A Linux kernel module.

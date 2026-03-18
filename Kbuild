@@ -1,3 +1,3 @@
-obj-m += dragonfire.o
+obj-m += hello.o
 
-dragonfire-objs := src/main.o src/greet/greet.o
+hello-objs := src/hello.o

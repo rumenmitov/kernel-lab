@@ -35,11 +35,11 @@ lint:
 
 
 install: build
-	@$(SUDO) insmod build/dragonfire.ko
+	@$(SUDO) insmod build/hello.ko
 
 
 uninstall:
-	@$(SUDO) rmmod dragonfire
+	@$(SUDO) rmmod hello
 
 
 clean:

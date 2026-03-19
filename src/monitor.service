@@ -1,0 +1,18 @@
+# monitor.service
+# Install/enable:
+#   sudo cp src/monitor.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now monitor
+
+[Unit]
+Description=Load monitor kernel module
+After=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/sbin/insmod monitor
+ExecStop=/sbin/rmmod monitor
+
+[Install]
+WantedBy=multi-user.target

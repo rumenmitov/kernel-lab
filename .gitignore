@@ -1,9 +1,10 @@
-.cache/
-build/
+/.cache/
+/build/
+/compile_commands.json
 
 *~
 **/*~
 *#
 **/*#
 
-.dir-locals.el
+/.dir-locals.el
